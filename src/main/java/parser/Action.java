@@ -1,8 +1,5 @@
 package parser;
 
-/**
- * Created by mohammad hosein on 6/25/2015.
- */
 public class Action {
   public act action;
   //if action = shift : number is state
