@@ -6,7 +6,7 @@
 
     <groupId>groupId</groupId>
     <artifactId>MiniJava</artifactId>
-    <version>0.0.1</version>
+    <version>0.1.1</version>
     <build>
         <plugins>
             <plugin>
