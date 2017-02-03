@@ -6,8 +6,16 @@
 
     <groupId>groupId</groupId>
     <artifactId>MiniJava</artifactId>
-    <version>0.1.1</version>
+    <version>0.1.2</version>
+
     <build>
+        <resources>
+            <resource>
+                <directory>
+                    src/main/resources
+                </directory>
+            </resource>
+        </resources>
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
@@ -15,6 +23,17 @@
                 <configuration>
                     <source>1.8</source>
                     <target>1.8</target>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-jar-plugin</artifactId>
+                <configuration>
+                    <archive>
+                        <manifest>
+                            <mainClass>Main</mainClass>
+                        </manifest>
+                    </archive>
                 </configuration>
             </plugin>
         </plugins>
